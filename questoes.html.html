@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+<meta charset ="UTF-8">
+</head>
+<body>
+<script>
+var acertos=0;
+var erradas=0;
+var gabarito=["A","C","E","B","D","B","B","C","A","E"];
+var resposta=[];
+
+for (i=0; i<10; i++){
+var questao=prompt("Digite a resposta da questão:");
+resposta.push(questao); 
+
+
+  if (gabarito[i] === resposta[i]) {
+  document.write("Resposta: correta" + "<br>");
+  acertos++;
+  } else {
+   document.write("Resposta: errada" + "<br>");
+    erradas++;
+  }
+}
+document.write("<br>" + "Acertos = " + acertos + "<br>" + "Erradas = " + erradas);
+
+
+
+
+
+
+</script>
+</body>
